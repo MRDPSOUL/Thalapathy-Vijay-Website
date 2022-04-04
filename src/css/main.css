@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- MAIN STYLE ---------- */
+.line-dp {
+  height: 5px;
+  background: linear-gradient(to bottom, transparent 2px, rgb(137 135 135) 2px, #333 3px, transparent 3px);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dp-divider {
+  height: 5px;
+  background: linear-gradient(to bottom, transparent 2px, rgb(137 135 135) 2px, #333 3px, transparent 3px);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.489);
+  display: flex;
+}
+
+.landing-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 85%;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-container h5 {
+  margin-top: -2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container .hero {
+  align-items: center;
+  width: 100%;
+}
+
+
+@media (max-width: 910px) {
+  .home-nav {
+    background-color: transparent;
+  }
+}
+
+/* ---------- ABOUT PAGE STARTS ---------- */
+
+
+#ABOUT {
+  background-color: rgb(20 20 20);
+  ;
+}
+
+.main-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading h1 {
+  color: #ffffff;
+  padding-top: 90px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.about-section {
+  width: 100%;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Thalapathy-about-img-1 img {
+  height: 378px;
+  border: 7px solid #555;
+}
+
+.about-thalapathy-contant {
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+}
+
+.br-none {
+  display: none;
+}
+
+.img-none {
+  display: none;
+}
+
+.thalapathy-4-img {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.thalapathy-4-img li {
+  padding-left: 50px;
+}
+
+.thalapathy-4-img li img {
+  height: 210px;
+  width: 300px;
+}
+
+.thalapathy-img-section {
+  justify-content: center;
+}
+
+.top-thalapathy-contant {
+  padding-left: 15px;
+}
+
+.vijay-photos-2 ul li img {
+  height: 300px;
+}
+
+.vijay-photos-2 ul li {
+  margin-right: 15px;
+}
+
+.vijay-photos-2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ---------- ABOUT PAGE ENDS ---------- */
+
+
+/* ---------- MOVIES PAGE STARTS ---------- */
+.img-box img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 2rem;
+  text-align: center;
+  width: 70%;
+  margin-top: 20px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.card {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+
+.card-content {
+  position: absolute;
+  background-color: rgb(0 0 0 / 50%);
+  color: #ffffff;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  padding: 2.2rem 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.card-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 1.2rem;
+}
+
+/* .card-content:hover {
+  height: 60%;
+  transition: 0.7s;
+} */
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.top-heading-movies {
+  padding-top: 75px;
+}
+
+.main-heading-movies {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  position: relative;
+}
+
+.main-heading-movies a {
+  text-decoration: none;
+}
+
+.main-heading-movies a h1 {
+  color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+}
+
+#movies {
+  background-color: rgb(20 20 20);
+}
+
+/* ---------- MOVIES PAGE ENDS ---------- */
+
+
+/* ---------- SONGS START ---------- */
+
+#songs {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .2s linear;
+  background-color: rgb(20 20 20);
+}
+
+.main-song {
+  flex-direction: column;
+}
+
+.container .heading {
+  padding-top: 100px;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 9%;
+  background-color: rgb(20 20 20);
+}
+
+.container .box-container.active {
+  padding-bottom: 150px;
+}
+
+.container .box-container .box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.container .box-container .box .image {
+  height: 390px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .box-container .box .image .play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  display: none;
+}
+
+.container .box-container .box:hover .image .play {
+  display: flex;
+}
+
+.container .box-container .box .image .play i {
+  font-size: 100px;
+  color: #fff;
+}
+
+.container .box-container .box .content {
+  padding-top: 15px;
+}
+
+.container .box-container .box .content h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.music-player {
+  position: fixed;
+  bottom: -125px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+.music-player.active {
+  bottom: 0;
+}
+
+.music-player .music-title {
+  font-size: 25px;
+  margin-bottom: 5px;
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+.music-player audio {
+  width: 100%;
+}
+
+.music-player audio::-webkit-media-controls-enclosure {
+  border-radius: 0;
+  background: #fff;
+}
+
+.music-player #close-player {
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  height: 50px;
+  width: 55px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+  background: #fff;
+  border: 3px solid #333;
+  border-bottom: none;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  .container .box-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .container .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container .box-container .box .image {
+    height: 300px;
+  }
+}
+
+/* ---------- SONGS ENDS ---------- */
+
+
+
+
+/* ---------- VIDEO STARTS ---------- */
+.video-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+#video {
+  background-color: rgb(20 20 20);
+  text-transform: capitalize;
+}
+
+
+
+#video .container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.container .main-video-container {
+  flex: 1 1 700px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  padding: 15px;
+}
+
+.container .main-video-container .main-video {
+  margin-bottom: 7px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container .main-video-container .main-vid-title {
+  font-size: 15px;
+  color: #444;
+  justify-content: center;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .video-list-container {
+  flex: 1 1 350px;
+  height: 485px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  padding: 15px;
+}
+
+.container .video-list-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container .video-list-container::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.container .video-list-container::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.container .video-list-container .list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.container .video-list-container .list:last-child {
+  margin-bottom: 0;
+}
+
+.container .video-list-container .list.active {
+  background-color: #444;
+}
+
+.container .video-list-container .list.active .list-title {
+  color: #fff;
+}
+
+.container .video-list-container .list .list-video {
+  width: 100px;
+  border-radius: 5px;
+  display: contents;
+}
+
+.container .video-list-container .list img {
+  width: 125px;
+}
+
+.container .video-list-container .list .list-title {
+  font-size: 13px;
+  color: #444;
+}
+
+
+
+@media (max-width:1200px) {
+
+  .container {
+    margin: 0;
+  }
+
+}
+
+@media (max-width:450px) {
+
+  .container .main-video-container .main-vid-title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .container .video-list-container .list {
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  .container .video-list-container .list .list-video {
+    width: 100%;
+  }
+
+  .container .video-list-container .list .list-title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+}
+
+/* ---------- VIDEO ENDS ---------- */
+
+
+/* ---------- GALLERY STARTS ---------- */
+
+#gallery {
+  background-color: rgb(20 20 20);
+}
+
+#gallery::-webkit-scrollbar {
+  width: 0;
+}
+
+#gallery .gallery-nav {
+  background-color: black;
+}
+
+.kingofkollywood-iframe {
+  margin-top: -235px;
+  border: 1px solid black;
+}
+
+.gallery-credit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: orange;
+  padding: 15px 0;
+}
+
+.credit-link {
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 910px) {
+  .container .main-video-container {
+    margin-top: 80px;
+  }
+
+
+  .footer {
+    width: 100%;
+    background: #2d2d2d;
+  }
+
+
+  /* ---------- GALLERY ENDS ---------- */
+
+
+
+  @media (max-width: 910px) {
+    .about-section {
+      flex-direction: column;
+    }
+
+    .about-section .thalapathy-img {
+      height: 435px;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-thalapathy-contant {
+      padding-left: 10px;
+    }
+
+    .about-thalapathy-contant {
+      color: aliceblue;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 25px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Thalapathy-about-img-1 {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      align-items: center;
+    }
+
+    .line-dp {
+      display: none;
+    }
+
+    .br-none {
+      display: block;
+    }
+
+    .about-thalapathy-contant {
+      font-size: 15px;
+    }
+
+    .res-img-none {
+      display: none;
+    }
+
+    .img-none {
+      display: block;
+      margin: 0;
+    }
+
+    .dp-divider {
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+
+    .thalapathy-4-img {
+      flex-direction: column;
+    }
+
+    .thalapathy-4-img li {
+      padding-left: 50px;
+      padding-top: 13px;
+    }
+
+    .thalapathy-img-dp {
+      height: 210px;
+      width: 300px;
+    }
+
+    .padding-0 {
+      padding-top: 0px;
+    }
+
+    .vijay-photos-2 {
+      display: none;
+    }
+
+    .top-thalapathy-contant {
+      padding-left: 0px;
+    }
+  }
+}

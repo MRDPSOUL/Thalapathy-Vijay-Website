@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---------- custom css ---------->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+
+
+    <!---------- CDN ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <title>Thalapathy Vijay</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!---------- NAVBAR STARTS ---------->
+        <div class="navbar">
+            <input type="checkbox" id="click">
+            <div class="nav-sub">
+                <img class="nav-logo" src="src/img/logo/logo.png">
+
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <div class="nav-row">
+                <div class="thalapathy-logo-nav">
+                    <a href="index.html"><img class="thalapathy-logo-nav" src="src/img/logo/logo.png"></a>
+                    <div class="nav-respon-heading">
+                        <h2>Thalapathy Vijay</h2>
+                    </div>
+                </div>
+                <div class="row-left">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Movies.html">Movies</a></li>
+                    </ul>
+                </div>
+                <div class="row-logo">
+                    <a href="index.html"><img class="logo" src="src/img/logo/logo.png"></a>
+                </div>
+                <div class="row-right">
+                    <ul>
+                        <li><a href="song.html">Songs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="video.html">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---------- NAVBAR ENDS ---------->
+
+
+        <div class="container home">
+
+
+            <div class="hero">
+
+                <div class="hero-container">
+                    <h1 style="font-family: 'Roboto', sans-serif;">WELCOME</h1>
+                    <h5>━━ Nanba & Nanbis ━━</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="src/js/easy_background.js"></script>
+
+    <script>
+        easy_background("body",
+
+            {
+                slide: ["src/img/landing images/1.jpg", "src/img/landing images/2.jpg", "src/img/landing images/3.jpg", "src/img/landing images/4.jpg", "src/img/landing images/5.jpg", "src/img/landing images/6.jpg"],
+
+                delay: [2000, 3000, 3000, 3000, 3000]
+            }
+
+
+        );
+
+
+
+    </script>
+
+</body>
+
+</html>

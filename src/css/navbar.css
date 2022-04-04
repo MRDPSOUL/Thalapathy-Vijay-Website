@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.517);
+    z-index: 100;
+    position: fixed;
+}
+
+.nav-row {
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-left {
+    margin-right: 55px;
+}
+
+.row-right {
+    margin-left: 55px;
+}
+
+.row-left ul {
+    list-style: none;
+    display: flex;
+}
+
+.row-right ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    width: 115px;
+    cursor: pointer;
+}
+
+.row-right ul li {
+    padding-right: 60px;
+}
+
+.row-left ul li {
+    padding-left: 60px;
+}
+
+.row-left ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    text-decoration: none;
+}
+
+.row-right ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    text-decoration: none;
+}
+
+/* ---------- NAVBAR STARTS ---------- */
+
+
+
+.navbar .nav-logo {
+    display: none;
+}
+
+.navbar .menu-btn i {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+    margin-right: 25px;
+    display: none;
+}
+
+
+.thalapathy-logo-nav {
+    width: 115px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-respon-heading {
+    display: none;
+    color: #00fcfc;
+    font-family: 'Roboto', sans-serif;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 910px) {
+    .row-left ul {
+        display: block;
+    }
+
+    .row-left ul li {
+        margin: 40px 0;
+    }
+
+    .row-right ul {
+        display: block;
+    }
+
+    .row-right ul li {
+        margin: 40px 0;
+    }
+
+    .row-logo {
+        display: none;
+    }
+
+    .thalapathy-logo-nav {
+        display: block;
+        height: 130px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #click:checked~.menu-btn i::before {
+        content: "\f00d";
+    }
+
+    .navbar {
+        background-color: #111;
+        ;
+    }
+
+    .navbar .nav-sub .menu-btn i {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .nav-row {
+        position: fixed;
+        left: -100%;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 170px;
+        align-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-sub {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15px;
+        height: 74px;
+    }
+
+    #click:checked~.nav-row {
+        left: 0%;
+    }
+
+    .nav-respon-heading {
+        display: block;
+        color: #f51416;
+        font-family: 'Roboto', sans-serif;
+        margin-top: -30px;
+    }
+
+    .nav-sub .nav-logo {
+        display: block;
+        padding-left: 40px;
+        width: 140px;
+        height: 119%;
+    }
+}
+
+/* ---------- NAVBAR ENDS ---------- */
