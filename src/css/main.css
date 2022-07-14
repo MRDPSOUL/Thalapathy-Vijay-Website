@@ -588,6 +588,17 @@ html {
   border: 1px solid black;
 }
 
+.gallery-update
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: orange;
+  height: 100vh;
+  align-items: center;
+}
+
 .gallery-credit {
   display: flex;
   justify-content: center;
