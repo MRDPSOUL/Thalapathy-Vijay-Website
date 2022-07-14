@@ -66,6 +66,24 @@
     text-decoration: none;
 }
 
+.row-left ul li a:hover
+{
+    color: rgb(255, 0, 0);
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+  
+
+}
+
+.row-right ul li a:hover
+{
+    color: rgb(255, 0, 0);
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+}
+
+
+
 /* ---------- NAVBAR STARTS ---------- */
 
 
