@@ -44,6 +44,7 @@
 .logo {
     width: 115px;
     cursor: pointer;
+    color: rgb(255, 0, 0);
 }
 
 .row-right ul li {
